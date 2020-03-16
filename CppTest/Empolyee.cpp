@@ -52,4 +52,22 @@ namespace Records
 	{
 		return mLastName;
 	}
+	void Employee::setEmployeeNumber(int employeeNumber)
+	{
+	}
+	int Employee::getEmployeeNumber() const
+	{
+		return 0;
+	}
+	void Employee::setSalary(int newSalary)
+	{
+	}
+	int Employee::getSalary() const
+	{
+		return 0;
+	}
+	bool Employee::isHired() const
+	{
+		return false;
+	}
 }
