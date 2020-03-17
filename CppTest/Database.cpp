@@ -5,7 +5,7 @@
 using namespace std;
 namespace Records
 {
-	Employee& Records::Databse::addEmployee(const std::string& firstName, const std::string& lastName)
+	Employee& Records::Database::addEmployee(const std::string& firstName, const std::string& lastName)
 	{
 		Employee theEmployee(firstName, lastName);
 		theEmployee.setEmployeeNumber(mNextEmployeeNumber++);
@@ -14,7 +14,7 @@ namespace Records
 		return mEmployees[mEmployees.size() - 1];
 	}
 
-	Employee& Records::Databse::getEmployee(int emplyeeNumber)
+	Employee& Records::Database::getEmployee(int emplyeeNumber)
 	{
 		for (auto& employee : mEmployees)
 		{
@@ -26,7 +26,7 @@ namespace Records
 		throw logic_error("No employee found.");
 	}
 
-	Employee& Records::Databse::getEmployee(const std::string& firstName, const std::string& lastName)
+	Employee& Records::Database::getEmployee(const std::string& firstName, const std::string& lastName)
 	{
 		for (auto& employee : mEmployees)
 		{
@@ -38,7 +38,7 @@ namespace Records
 		throw logic_error("No employee found.");
 	}
 
-	void Records::Databse::displayAll() const
+	void Records::Database::displayAll() const
 	{
 		for (const auto& employee : mEmployees)
 		{
@@ -46,7 +46,7 @@ namespace Records
 		}
 	}
 
-	void Records::Databse::displayCurrent() const
+	void Records::Database::displayCurrent() const
 	{
 		for (const auto& employee : mEmployees)
 		{
@@ -57,7 +57,7 @@ namespace Records
 		}
 	}
 
-	void Records::Databse::displayFormer() const
+	void Records::Database::displayFormer() const
 	{
 		for (const auto& employee : mEmployees)
 		{

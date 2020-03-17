@@ -6,7 +6,7 @@
 namespace Records
 {
 	const int kFirstEmployeeNumber = 1000;
-	class Databse
+	class Database
 	{
 	public:
 		Employee& addEmployee(const std::string& firstName,const std::string& lastName);
